@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-control {
+    @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-gray-900 shadow-sm placeholder:text-gray-400 
+    focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20
+    hover:border-gray-300 transition-colors duration-200;
+  }
+  .form-field {
+    @apply relative space-y-1.5;
+  }
+  .form-field label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-2.5 text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-indigo-600 text-white shadow-lg shadow-indigo-500/25 
+    hover:bg-indigo-700 hover:shadow-indigo-500/35 hover:scale-[1.02]
+    focus:ring-indigo-500
+    disabled:cursor-not-allowed disabled:opacity-50 disabled:saturate-50 disabled:hover:scale-100;
+  }
+  .btn-secondary {
+    @apply bg-white text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 
+    hover:bg-gray-50 hover:text-gray-900 hover:scale-[1.02]
+    focus:ring-gray-400
+    disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100;
+  }
+  .field-icon {
+    @apply pointer-events-none absolute right-1 top-1;
+  }
+}

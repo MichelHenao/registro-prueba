@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+.env
+.vscode/
+.DS_Store
+npm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Vite
+/.vite
+
+# Local envs
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS
+Thumbs.db
+desktop.ini
