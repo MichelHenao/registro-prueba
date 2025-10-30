@@ -38,9 +38,3 @@ export const schemaStep3 = yup.object({
   direccion: yup.string().required('Dirección requerida'),
   codigoPostal: yup.string().min(4,'Mínimo 4 caracteres').required('Código postal requerido')
 })
-
-export const stepFields = {
-  1: ['pais','genero','primerNombre','segundoNombre','fechaNacimiento','tipoDocumento','numeroDocumento','fotoDocFrente','fotoDocReverso'],
-  2: ['email','password','password2','telefono','celular'],
-  3: ['direccion','codigoPostal']
-}
